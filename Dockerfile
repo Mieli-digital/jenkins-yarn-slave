@@ -31,7 +31,7 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add && \
 RUN apt-get install yarn -y
 
 # install docker
-RUN apt-get install -qy docker.io
+RUN apt-get install -qy docker-ce docker-ce-cli containerd.io
 RUN usermod -aG docker jenkins
 
 # install docker-compose
